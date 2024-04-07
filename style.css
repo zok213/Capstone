@@ -88,6 +88,10 @@ header > span {
   grid-gap: 30px;
   margin: auto;
 }
+.learn {
+  display: flex;
+  justify-content: flex-end;
+}
 .vid_text > div > h1 {
   text-align: right;
   margin-top: 30px;

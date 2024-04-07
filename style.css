@@ -1,0 +1,453 @@
+html {
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    border: none;
+  }
+  body {
+    width: auto;
+    height: 100%;
+  }
+ul {
+  list-style-type: none;
+}
+li::before {
+  content: "\2022";
+  color: aqua;
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding-left: 0;
+}
+li{
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+.header {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+header > h2 {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-gap: 10px;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+header > h4 {
+  font-size: 22px;
+}
+header > p {
+  margin: 10px 0 10px 0;
+  font-size: 14x;
+}
+button {
+  background-color: wheat;
+  padding: 15px 70px;
+  margin: 10px 0 10px 0;
+  border: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 1px rgba(0,0,0,.1);
+  font-size: 18px;
+}
+header > span {
+  font-size: 12px;
+  color: #595959;
+
+}
+.vid {
+  background-color:aqua;
+  position: relative;
+  padding-top: 300px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+.video {
+  margin: auto;
+  display: block;
+  position: absolute;
+  top:-200px;
+  max-width: 700px;
+  height: auto;
+  left:0;
+  right:0;
+}
+.vid_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: auto;
+}
+.vid_text > div > h1 {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 42px;
+  max-width: 400px;
+}
+.vid_text > div > p {
+  margin: 20px 0px 20px 0;
+  max-width: 400px;
+  font-size: 18px;
+}
+.white {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 900px;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 50px;
+  grid-gap:20px;
+  max-width: 400px;
+}
+.text{
+  margin: auto;
+  justify-content: right;
+}
+.text > h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.text > p {
+  margin: 10px 0px 10px 0;
+  font-size: 18px;
+}
+.grey{
+  background-color: rgb(26, 29, 29);
+}
+.grey> div {
+  max-width: 900px;
+  color:white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: auto;
+  height: 800px;
+}
+.grey > div > div {
+  margin: auto;
+  max-width: 350px;
+  
+}
+.grey > div > div > h1 {
+  margin: 0px 0px 20px 0px;
+  font-size: 42px;
+}
+.grey > div > div > p {
+  margin: 0px 0px 20px 0px;
+  font-size: 18px;
+}
+.grey > div > div > div > img {
+  margin: 10px 5px 10px 0px;
+  max-width: 300px;
+  height: auto;
+}
+.grey > div > div > div > p {
+  margin: 10px 5px 10px 0px;
+  max-width: 350px;
+  height: auto;
+}
+.whitegrey {
+  background-color: rgb(235, 235, 235);
+}
+.flashcard {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0px;
+  margin: auto;
+  height: 800px;
+
+}
+.whitegrey > div > div {
+  max-width: 450px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+.flashcardtext {
+  margin-top: 50px;
+}
+.whitegrey > div > div > h1{
+  font-size: 42px;
+}
+.whitegrey > div > div > h1 > span {
+  background-color: aqua;
+  color: black;
+  padding: 4px;
+}
+.whitegrey > div > div > p {
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+}
+.tweet > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 900px;
+}
+.tweet > h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 42px;
+}
+.tweet > div > div {
+  position: relative;
+  border: #595959;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.twitter {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.tweet-box{
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+.tweet-box > div > span{
+  color: grey;
+}
+.whitegrey > div{
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: auto;
+}
+.whitegrey > div > div > img{
+  display: flex;
+  align-items: center;
+}
+.threeblock > h1 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+}
+.threeblock > div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 900px;
+}
+.threeblock > div > div {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+.threeblock > div > div > h1 {
+  padding: 10px;
+}
+.threeblock > div > div > ul > li {
+  list-style-position: inside;
+  margin-left: 5px;
+  padding: 5px;
+}
+.Morden {
+  background-color: rgb(235, 235, 235);
+}
+.Morden > div {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: auto;
+}
+.Morden > div > div > h3{
+  font-size: 26px;
+  padding-top: 10px;
+}
+
+.Morden > div > div > p {
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+}
+.easiest {
+  background-color:aqua;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;  
+}
+.easiest > div > h1 {
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+.easiest > div > div > h4 {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.easiest > div > div {
+  display: flex;
+  justify-content: center;
+}
+.textbg {
+  background-color: black;
+  color: aqua;
+  padding-bottom: 4px;
+}
+.endmain {
+  margin: auto;
+  max-width: 800px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.endmain > h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.endmain > div > a {
+  display: grid;
+  grid-template-columns: 60px auto;
+  grid-gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+  color: black;
+  text-decoration: none;
+}
+.endmain > div > a:hover {
+  text-decoration: underline;
+}
+.endmain > div > a > div > h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.endmain > div > a > div > p {
+  font-size: 18px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+.footer > div {
+  display: flex;
+}
+.footer > div > p {
+  padding: 5px;
+}
+
+@media only screen and (max-width: 925px) {
+  .vid_text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin: auto;
+  }
+  .vid_text > div > h1 {
+    text-align: left;
+    font-size: 42px;
+    max-width: 925px;
+    margin: 20px 20px 20px 20px;
+  }
+  .vid_text > div > p {
+    margin: 20px 20px 20px 20px;
+    max-width: 925px;
+    font-size: 18px;
+  }
+  .white {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: auto;
+    margin: 20px 20px 20px 20px;
+    max-width: 900px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    grid-gap:20px;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .threeblock > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 900px;
+  }
+  .threeblock > div > div {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    padding-left: 40px;
+  }
+  
+}
+
+@media screen and (max-width: 625px){
+  
+  .grey> div {
+    max-width: 725px;
+    color: white;
+    display: flex;
+    grid-gap: 10px;
+    margin: auto;
+    height: 1000px;
+    flex-wrap: wrap-reverse;
+  }
+  .whitegrey > div {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .whitegrey > div > div {
+    max-width: 925px;
+    padding: 40px 20px 50px 20px;
+  }
+  .tweet > div {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 900px;
+  }
+}
